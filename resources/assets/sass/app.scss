@@ -1,0 +1,24 @@
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+body {
+    padding-top: 75px;
+}
+
+.table-auto {
+    width: auto;
+}
+
+.section-data {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    > table {
+        margin-right: 2em;
+        margin-bottom: 2em;
+    }
+}
