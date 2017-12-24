@@ -85,6 +85,7 @@ return [
     |
     */
     'registration' => [
+        'required' => env('AUTH_ENABLED', false),
         'enabled' => env('REGISTRATION_ENABLED', false),
     ],
 
