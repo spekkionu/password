@@ -31,6 +31,7 @@
 
 <script>
     import {mapGetters, mapActions} from 'vuex';
+    import fuzzysearch from 'fuzzysearch';
 
     export default {
         data(){
@@ -40,7 +41,13 @@
         },
         computed: {
             filtered(){
-                return this.sites;
+                return _.filter(this.sites, site => {
+                    if (this.search === '') {
+                        return true;
+                    }
+
+                    return fuzzysearch(this.search, site.name) || fuzzysearch(this.search, site.domain);
+                });
             },
 
             ...mapGetters([
