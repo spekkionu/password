@@ -11,7 +11,7 @@ build:
     tests:
         override:
             -
-                command: 'vendor/bin/phpunit --configuration phpunit.travis.xml --coverage-text'
+                command: 'vendor/bin/phpunit --configuration phpunit.xml --coverage-text'
                 coverage:
                     file: 'coverage.clover'
                     format: 'php-clover'
