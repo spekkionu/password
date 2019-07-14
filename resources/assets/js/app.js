@@ -22,19 +22,19 @@ Vue.use(BootstrapVue);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('sites', require('./components/Sites.vue'));
-Vue.component('site', require('./components/Site.vue'));
-Vue.component('add-site', require('./components/AddSite.vue'));
-Vue.component('edit-site', require('./components/EditSite.vue'));
-Vue.component('delete-site', require('./components/DeleteSite.vue'));
-Vue.component('add-section', require('./components/section/AddSection.vue'));
-Vue.component('site-section', require('./components/section/Section.vue'));
-Vue.component('edit-section', require('./components/section/EditSection.vue'));
-Vue.component('delete-section', require('./components/section/DeleteSection.vue'));
-Vue.component('data-group', require('./components/data/Data.vue'));
-Vue.component('add-data', require('./components/data/AddData.vue'));
-Vue.component('edit-data', require('./components/data/EditData.vue'));
-Vue.component('delete-data', require('./components/data/DeleteData.vue'));
+Vue.component('sites', require('./components/Sites.vue').default);
+Vue.component('site', require('./components/Site.vue').default);
+Vue.component('add-site', require('./components/AddSite.vue').default);
+Vue.component('edit-site', require('./components/EditSite.vue').default);
+Vue.component('delete-site', require('./components/DeleteSite.vue').default);
+Vue.component('add-section', require('./components/section/AddSection.vue').default);
+Vue.component('site-section', require('./components/section/Section.vue').default);
+Vue.component('edit-section', require('./components/section/EditSection.vue').default);
+Vue.component('delete-section', require('./components/section/DeleteSection.vue').default);
+Vue.component('data-group', require('./components/data/Data.vue').default);
+Vue.component('add-data', require('./components/data/AddData.vue').default);
+Vue.component('edit-data', require('./components/data/EditData.vue').default);
+Vue.component('delete-data', require('./components/data/DeleteData.vue').default);
 
 const app = new Vue({
     el: '#app',
